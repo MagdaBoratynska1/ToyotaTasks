@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestyToyotaPl">
+
+    <test name = "Generowanie ofery PDF">
+        <classes>
+            <class name="CalculationTest">
+                    <parameter name="url" value="https://www.toyota.pl/"></parameter>
+                    <parameter name="carModel" value="Nowy Yaris Cross"></parameter>
+                    <parameter name="financingPeriod" value="48"></parameter>
+                    <parameter name="initalFee" value="20"></parameter>
+                    <parameter name="kilometerLimit" value="30"></parameter>
+            </class>
+        </classes>
+    </test>
+
+    <test name = "Wysłanie Formularza Google - Toyota">
+        <classes>
+            <class name="GoogleFormTest">
+                <parameter name="url" value="https://docs.google.com/forms/d/e/1FAIpQLSfBI1IzvaydpHLXJn8vcp9IBGbCAOdZ2NzdIyviJGo_WUiWrQ/viewform"></parameter>
+            </class>
+        </classes>
+    </test>
+
+</suite>
